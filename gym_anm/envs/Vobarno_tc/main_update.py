@@ -157,8 +157,8 @@ class TCEnvironment(ANMEnv_tc):
     """An example of a simple 2-bus custom gym-anm environment."""
 
     def __init__(self, my_network, p_dev, q_loads, init_tc):
-        # observation = [('bus_v_magn', [1, 92, 148, 267, 204], 'pu')]
-        observation = [('bus_v_magn', 'all', 'pu')]
+        observation = [('bus_v_magn', [1, 92, 148, 267, 204], 'pu')]
+        # observation = [('bus_v_magn', 'all', 'pu')]
         # observation = [('bus_p', [0], 'MW'), ('bus_q', [0], 'MVAr')]
         K = 1                             # 1 auxiliary variable
         delta_t = 0.25                    # 15min intervals
